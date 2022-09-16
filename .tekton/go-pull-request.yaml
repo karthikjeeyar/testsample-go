@@ -10,7 +10,7 @@ metadata:
     pipelinesascode.tekton.dev/on-target-branch: '[main,master]'
   creationTimestamp: null
   labels:
-    appstudio.openshift.io/application: application
+    appstudio.openshift.io/application: my-application
     appstudio.openshift.io/component: go
     build.appstudio.openshift.io/component: go
     pipelines.appstudio.openshift.io/type: build
@@ -25,7 +25,7 @@ spec:
   - name: output-image
     value: quay.io/redhat-appstudio/user-workload:on-pr-{{revision}}
   - name: dockerfile
-    value: https://raw.githubusercontent.com/karthikjeeyar/devfile-sample-go-basic/main/docker/Dockerfile
+    value: https://raw.githubusercontent.com/karthikjeeyar/sample-go-repo/main/docker/Dockerfile
   pipelineRef:
     bundle: quay.io/redhat-appstudio/build-templates-bundle:13f5d9c921b3f727684a00084037f673a0dc4273
     name: docker-build
