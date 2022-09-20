@@ -34,7 +34,4 @@ spec:
     persistentVolumeClaim:
       claimName: appstudio
     subPath: testsample-go-on-pull-request-{{revision}}
-  - name: registry-auth
-    secret:
-      secretName: redhat-appstudio-registry-pull-secret
 status: {}
