@@ -1,1 +1,1 @@
-Test sample go component
+Test sample go component.
