@@ -1,1 +1,1 @@
-# devfile-sample-go-basic
+Test sample go
